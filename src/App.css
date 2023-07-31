@@ -1,38 +1,203 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #ffffff !important;
+}
+/* wave content */
+.ag-format-container {
+  width: auto;
+  margin: auto;
+}
+
+
+/* @font-face {
+  font-family: Heavitas;
+  src: url(https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_fonts/Heavitas/Heavitas.eot);
+  src: url(https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_fonts/Heavitas/Heavitas.woff2) format('woff2'),
+  url(https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_fonts/Heavitas/Heavitas.woff) format('woff'),
+  url(https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_fonts/Heavitas/Heavitas.ttf) format('truetype'),
+  url(https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_fonts/Heavitas/Heavitas.svg#Heavitas) format('svg'),
+  url(https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_fonts/Heavitas/Heavitas.eot?#iefix) format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+/* body {
+  font-size: 18px;
+  color: #53545a;
+} */
+
+/* wave background */
+.wave{
+  margin: 0rem 0rem 0rem 0rem;
+}
+.ag-maecenas_title {
+  padding: 2rem 0rem 20rem 0rem;
+  margin: 0rem -4.5rem 0rem 0rem;
+  background-color: #117FD5;
+
   text-align: center;
+  font-family: Heavitas, sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  color: #FFF;
+  /* border: 1px solid #000; */
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 768px) {
+  .ag-maecenas_title {
+    max-width: 120%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+/* wave main */
+.ag-maecenas_title:before {
+  content: "";
+  height: 120px;
+  width: 100%;
+  background: url(https://raw.githack.com/SochavaAG/example-mycode/master/pens/animation-wave-shadow/images/wave.svg) repeat-x scroll 0 0;
+  -webkit-background-size: 1600px 198px;
+  -moz-background-size: 1600px 198px;
+  -o-background-size: 1600px 198px;
+  background-size: 1600px 198px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  -webkit-filter: drop-shadow(5px -10px 3px rgba(0, 0, 0, .2));
+  filter: drop-shadow(5px -10px 3px rgba(0, 0, 0, .2));
+
+  -webkit-animation: an-wave 20s linear infinite;
+  -moz-animation: an-wave 20s linear infinite;
+  -o-animation: an-wave 20s linear infinite;
+  animation: an-wave 20s linear infinite;
+}
+
+/* .ag-maecenas_box {
+  padding: 70px 0;
+  background-color: #FFF;
+
+  position: relative;
+}
+.ag-maecenas_item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  padding: 0 0 120px;
+}
+.ag-maecenas_descr {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 60%;
+  -moz-box-flex: 1;
+  -ms-flex: 1 1 60%;
+  flex: 1 1 60%;
+
+  padding: 0 40px;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ag-maecenas_title-item {
+  padding: 0 0 15px;
+
+  font-family: Heavitas, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+} */
+/* .ag-maecenas_tagline-item {
+  padding: 0 0 15px;
+
+  font-family: Heavitas, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+.ag-requirement_item {
+  padding: 10px 10px 10px 20px;
+
+  position: relative;
+} */
+/* .ag-requirement_item:before {
+  content: "";
+  height: 6px;
+  width: 6px;
+  background-color: #00a2ff;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+} */
+/* .ag-maecenas_img-box {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 40%;
+  -moz-box-flex: 1;
+  -ms-flex: 1 1 40%;
+  flex: 1 1 40%;
+
+  height: 300px;
+  padding: 0 15px;
+
+  text-align: center;
+} */
+/* .ag-maecenas_item:nth-child(odd) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+} */
+
+/* .svg-img-block {
+  display: none;
+} */
+
+@-webkit-keyframes an-wave {
+  100% {
+    background-position-x: -1600px;
+  }
+}
+@-moz-keyframes an-wave {
+  100% {
+    background-position-x: -1600px;
+  }
+}
+@-o-keyframes an-wave {
+  100% {
+    background-position-x: -1600px;
+  }
+}
+@keyframes an-wave {
+  100% {
+    background-position-x: -1600px;
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
