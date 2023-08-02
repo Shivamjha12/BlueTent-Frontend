@@ -40,8 +40,8 @@ function Header({user}) {
             <Nav className="me-auto">
               {user!=="notUser"?(
               <>
-              <Nav.Link onClick={(e)=>{navigate('/search')}}>
-                Search places
+              <Nav.Link onClick={(e)=>{navigate('/explore')}}>
+                Explore 
                 </Nav.Link>
               <Nav.Link onClick={(e)=>{navigate('/yourPlans')}}>
                 Your Plans

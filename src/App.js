@@ -13,6 +13,7 @@ import Home from './Pages/LandingPage';
 import AddPlan from './Pages/addPlan';
 import Userplans from './Pages/yourPlans'
 import Planpage from './Pages/PlanPage';
+// import Exple from './Pages/explore'
 
 // Importing Components from Components File Directory
 import Header from './Components/Header';
@@ -68,9 +69,8 @@ function App() {
     <Route path="/addplan" element={user==='notUser'?(<Login/>):(<AddPlan user={user}/>)}/>
     <Route path="/editplan/:editID" element={<AddPlan user1={user} />}/> 
     <Route path="/yourPlans" element={user==='notUser'?(<Login/>):(<Userplans user={user}/>)}/>
-    <Route path="/plan/:PlanID/:email" element= {<Planpage user={user} />} />
+    <Route path="/plan/:planID" element= {<Planpage user={user} />} />
     </Routes>
-    <h4>{user}</h4>
     </>
   );
 }

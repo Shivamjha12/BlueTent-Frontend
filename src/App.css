@@ -80,6 +80,45 @@ body {
   animation: an-wave 20s linear infinite;
 }
 
+.fav_btn{
+  border: none;
+  background: #fff;
+}
+
+/*
+.actions {
+  background: #3a3a3a;
+  color:white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  color: white;
+  -webkit-user-select: none;
+  user-select: none;
+  width: 32px;
+  height: 22px;
+  cursor: pointer;
+  margin: 0 10px ;
+}
+.action_btns{
+  display: flex;
+  flex-direction: row;
+  flex:1;
+  justify-content: center;
+}
+.podcastpagemain1{
+  height: 100%;
+  width: 80%;
+  padding: 5rem 0rem 5rem 5rem;
+  margin: 5rem 0rem 0rem 5rem;
+  border-radius: 15px;
+  background-color: rgb(125, 186, 233);
+} */
 /* .ag-maecenas_box {
   padding: 70px 0;
   background-color: #FFF;
