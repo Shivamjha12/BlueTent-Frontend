@@ -18,6 +18,7 @@ function Home(){
     <Row>
       <div style={{"margin":"25px 0px 0px 0px"}} className="landing-page-bottom-div ">
       <h2 className="text-center">The simplest way to Plan your Holidays</h2>
+      <h2 className="text-center">Signup and Login for exploration</h2>
       </div>
     </Row>
     
