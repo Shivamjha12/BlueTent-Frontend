@@ -84,6 +84,44 @@ body {
   border: none;
   background: #fff;
 }
+.horizontal-view::-webkit-scrollbar {
+  height: 0;
+  visibility: hidden;
+}
+.scroll-row1 {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Adjust the height as needed */
+}
+.scroll-row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.horizontal-view {
+  margin: 0rem 0rem -13rem 0rem;
+  position: relative;
+  height: 700px;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.horizontal-view1 {
+  margin: -13rem 0rem 0rem 0rem;
+  position: relative;
+  height: 400px;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
 
 /*
 .actions {

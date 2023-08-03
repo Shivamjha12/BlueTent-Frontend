@@ -5,7 +5,7 @@ function Actions({actionData}){
     const[isfav,setisfav]=useState(0);
     const [favbtn,setfavbtn]=useState("far fa-heart fa-2x");
     const [response,setResponse]=useState('');
-    const baseurl = 'http://localhost:8000';
+    const baseurl = 'https://bluetent-backend.shivamkrjha.repl.co';
     // const production_url = 'https://hearlit-podcast-web-app-backend-djangorest.shivamkrjha.repl.co'
     useEffect(
         ()=>{

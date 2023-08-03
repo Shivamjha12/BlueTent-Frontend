@@ -7,8 +7,8 @@ function Login(){
     // const [jwt,setJwt]=useState('');
     const [email,setEmail]=useState('');
     const [password,setPassword]=useState('');
-    const baseurl = 'http://127.0.0.1:8000';
-    const production_url = 'https://hearlit-podcast-web-app-backend-djangorest.shivamkrjha.repl.co'
+    const baseurl = 'https://bluetent-backend.shivamkrjha.repl.co';
+    const production_url = 'https://bluetent-backend.shivamkrjha.repl.co'
     const onSubmit = async (e)=>{
         e.preventDefault();
         const signupData = {

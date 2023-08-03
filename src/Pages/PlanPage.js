@@ -4,7 +4,8 @@ import { useLocation,Link, useNavigate, useParams } from "react-router-dom";
 import Actions from '../Components/actions';
 // import { useLocation } from 'react-router-dom';
 function Planpage({user}){
-    const production_url = 'https://hearlit-podcast-web-app-backend-djangorest.shivamkrjha.repl.co';
+    const production_url = 'https://bluetent-backend.shivamkrjha.repl.co';
+    const baseurl = 'https://bluetent-backend.shivamkrjha.repl.co';
     const { planID } = useParams();
     const [podcastdata,setPodcastdata] = useState([]);
     const actionData = {
@@ -27,7 +28,7 @@ function Planpage({user}){
         console.log(actionData,"Here is action data variable========------========-------=")
     }
     const { title, destination, description, budget, no_of_people, no_of_days, purpose_of_visit,date_of_visit,likes} = podcastdata;
-    const baseurl = 'http://localhost:8000';
+    
     
     useEffect(
         ()=>{

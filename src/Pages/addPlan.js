@@ -18,8 +18,8 @@ function AddPlan(user1){
     const [editPlanPostdata,setEditplanpostdata] = useState([]);
     const [destionations,setDestinations] = useState([])
     const {editID} = useParams()
-    const baseurl = 'http://localhost:8000';
-    const production_url = 'https://hearlit-podcast-web-app-backend-djangorest.shivamkrjha.repl.co'
+    const baseurl = 'https://bluetent-backend.shivamkrjha.repl.co';
+    const production_url = 'https://bluetent-backend.shivamkrjha.repl.co'
     useEffect(() => {
         // const {formuser} = user1
         // console.log(formuser,"here is form user and here is user",user,user1.user)
